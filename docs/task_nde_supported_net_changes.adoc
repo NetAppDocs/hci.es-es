@@ -1,0 +1,155 @@
+---
+sidebar: sidebar 
+permalink: docs/task_nde_supported_net_changes.html 
+summary: Obtenga más información sobre las tareas posteriores a la implementación de NetApp HCI. 
+keywords: netapp, hci, deployment, review, deploy 
+---
+= Cambios de red admitidos
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ../media/
+
+
+[role="lead"]
+Después de implementar NetApp HCI, puede realizar cambios limitados en la configuración de red predeterminada. Sin embargo, debe cumplir con ciertos requisitos para un funcionamiento fluido y una detección de red correcta. No cumplir estos requisitos puede provocar un comportamiento inesperado y puede impedir que amplíe los recursos informáticos y de almacenamiento.
+
+Después de implementar el sistema, puede realizar los siguientes cambios en la configuración de red predeterminada en VMware vSphere, según lo dicten los requisitos de red:
+
+* Cambie los nombres de vSwitch
+* Cambie los nombres de grupo de puertos
+* Agregar y quitar grupos de puertos adicionales
+* Cambie el orden de conmutación por error de la interfaz vmnic para los grupos de puertos adicionales que haya agregado
+
+
+Al escalar H300E, H500E, H700E, H410C, H610C, Y los nodos de computación H615C, NetApp HCI espera que el clúster de computación existente en el nodo cumpla los siguientes requisitos:
+
+* Un mínimo de cuatro interfaces vmk
+* Una interfaz de vmk de gestión
+* Una interfaz vmk de vmotion
+* Dos vmks en la misma subred con vinculaciones iSCSI al iniciador de software iSCSI
+
+
+[NOTE]
+====
+A partir de NetApp HCI 1.10, cuando escala el clúster, NetApp HCI no espera cumplir con las configuraciones predeterminadas de los nodos.
+
+Después de cambiar la configuración predeterminada de VMware vSphere para uno o varios nodos del clúster de computación existente, la configuración del nodo nuevo se alineará con la configuración de la mayoría de los nodos del clúster.
+
+====
+
+
+== Configuraciones predeterminadas del motor de puesta en marcha de NetApp
+
+El motor de puesta en marcha de NetApp configura configuraciones predeterminadas para los hosts de computación, en función de la configuración del sistema y de los cables.
+
+
+
+=== Los nodos de computación H300E, H500E, H700E y H410C
+
+El siguiente es una configuración de seis interfaces para los nodos H300E, H500E, H700E y H410C con el switch distribuido de VMware vSphere (VDS). Esta configuración solo es compatible cuando se utiliza con switches distribuidos de VMware vSphere y requiere la licencia de VMware vSphere Enterprise Plus.
+
+|===
+| Función de red | vmkernel | vmnic (interfaz física) 
+
+
+| Gestión | vmk0 | Vmnic2 (puerto A), vmnic3 (puerto B) 
+
+
+| ISCSI-a | vmk1 | Vmnic5 (puerto E) 
+
+
+| ISCSI-B | vmk2 | Vmnic1 (puerto D) 
+
+
+| VMotion | vmk3 | Vmnic4 (puerto C), vmnic0 (puerto F) 
+|===
+A continuación se muestra una configuración de seis interfaces con VMware vSphere Standard Switching (VSS). Esta configuración utiliza VMware vSphere Standard Switch (VSS).
+
+|===
+| Función de red | vmkernel | vmnic (interfaz física) 
+
+
+| Gestión | vmk0 | Vmnic2 (puerto A), vmnic3 (puerto B) 
+
+
+| ISCSI-a | vmk2 | Vmnic1 (puerto E) 
+
+
+| ISCSI-B | vmk3 | Vmnic5 (puerto D) 
+
+
+| VMotion | vmk1 | Vmnic4 (puerto C), vmnic0 (puerto F) 
+|===
+A continuación se muestra una configuración con dos interfaces. Esta configuración solo se admite cuando se utiliza con switches distribuidos (VDS) de VMware vSphere y requiere una licencia de VMware vSphere Enterprise Plus.
+
+|===
+| Función de red | vmkernel | vmnic (interfaz física) 
+
+
+| Gestión | vmk0 | Vmnic1 (puerto D), vmnic5 (puerto E) 
+
+
+| ISCSI-a | vmk1 | Vmnic1 (puerto E) 
+
+
+| ISCSI-B | vmk2 | Vmnic5 (puerto D) 
+
+
+| VMotion | vmk3 | Vmnic1 (puerto C), vmnic5 (puerto F) 
+|===
+
+
+=== Nodos de computación H610C
+
+Esta configuración solo se admite cuando se utiliza con switches distribuidos de VMware vSphere (VDS) y requiere licencia de VMware vSphere Enterprise Plus.
+
+
+NOTE: Los puertos A y B no se utilizan en H610C.
+
+|===
+| Función de red | vmkernel | vmnic (interfaz física) 
+
+
+| Gestión | vmk0 | Vmnic2 (puerto C), vmnic3 (puerto D) 
+
+
+| ISCSI-a | vmk1 | Vmnic3 (puerto D) 
+
+
+| ISCSI-B | vmk2 | Vmnic2 (puerto C) 
+
+
+| VMotion | vmk3 | Vmnic2 (puerto C), vmnic3 (puerto D) 
+|===
+
+
+=== Nodos de computación H615C
+
+Esta configuración solo es compatible para los nodos H615C cuando se utiliza con los switches distribuidos (VDS) de VMware vSphere y requiere licencia de VMware vSphere Enterprise Plus.
+
+|===
+| Función de red | vmkernel | vmnic (interfaz física) 
+
+
+| Gestión | vmk0 | Vmnic0 (puerto A), vmnic1 (puerto B) 
+
+
+| ISCSI-a | vmk1 | Vmnic0 (puerto B) 
+
+
+| ISCSI-B | vmk2 | Vmnic1 (puerto A) 
+
+
+| VMotion | vmk3 | Vmnic0 (puerto A), vmnic1 (puerto B) 
+|===
+
+
+== Obtenga más información
+
+* https://docs.netapp.com/us-en/vcp/index.html["Plugin de NetApp Element para vCenter Server"^]
+* https://www.netapp.com/us/documentation/hci.aspx["Recursos de NetApp HCI"^]
+* https://docs.netapp.com/us-en/element-software/index.html["Documentación de SolidFire y el software Element"^]
+

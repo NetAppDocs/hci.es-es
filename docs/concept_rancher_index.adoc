@@ -1,0 +1,17 @@
+---
+sidebar: sidebar 
+permalink: docs/concept_rancher_index.html 
+summary: A partir de los servicios de gestión 2.21.61, Rancher ya no es compatible con las implementaciones existentes y nuevas de Rancher. Puede continuar administrando Rancher utilizando versiones anteriores de servicios de administración. 
+keywords: netapp, hci, rancher, control plane, catalog, cluster, kubernetes 
+---
+= Use Rancher en NetApp HCI
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ../media/
+
+
+[role="lead"]
+Para las implementaciones de Rancher existentes, comenzando con los servicios de gestión 2.21.61, Rancher ya no es compatible. Si actualiza a los servicios de gestión 2.21.61, no puede utilizar el control de cloud híbrido de NetApp para gestionar, supervisar o actualizar Rancher para puestas en marcha existentes o realizar nuevas implementaciones en sistemas NetApp HCI. Si ya ha implementado Rancher en su sistema NetApp HCI y está ejecutando servicios de administración 2.20.69 o anterior, puede seguir administrando, supervisando y actualizando Rancher mediante el http://docs.netapp.com/us-en/hci19/docs/concept_rancher_product_overview.html["Documentación de NetApp HCI 1.9"^].

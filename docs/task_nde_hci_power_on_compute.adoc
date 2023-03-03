@@ -42,5 +42,4 @@ Si no espera lo suficiente, aparece un mensaje que indica que el servidor web de
 [discrete]
 == Obtenga más información
 
-* link:firmware_driver_versions.html["Versiones de firmware y controlador ESXi compatibles para las versiones de NetApp HCI y firmware para los nodos de almacenamiento NetApp HCI"]
-
+link:firmware_driver_versions.html["Versiones de firmware y controlador ESXi compatibles para las versiones de NetApp HCI y firmware para los nodos de almacenamiento NetApp HCI"]

@@ -25,7 +25,7 @@ Busque la etiqueta de hardware para un nodo de computación en VMware vSphere We
 image:../media/hw_tag_70.PNG["Captura de pantalla de la tabla System"]
 
 . Copie y guarde el valor para *Tag*.
-. xref:task_mnode_add_assets.adoc[Añada los activos de computación y de controladora al nodo de gestión]..
+. xref:task_mnode_add_assets.adoc[Añada los activos de computación y de controladora al nodo de gestión].
 
 
 --

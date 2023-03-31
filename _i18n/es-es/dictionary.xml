@@ -1813,7 +1813,6 @@
   <block id="9e31323b5cbbe61c6c8c43ad2755958b" category="doc">Actualice el plugin de Element para vCenter Server</block>
   <block id="9b50fd8de96fcf38bc35a026df14fbc4" category="paragraph">Para los entornos de vSphere existentes con un plugin de NetApp Element registrado para VMware vCenter Server, es posible actualizar el registro del plugin después de actualizar por primera vez el paquete de servicios de gestión que contiene el servicio del plugin.</block>
   <block id="e6c04958395a323ddbc02c929b4dfdf0" category="paragraph">Es posible actualizar el registro del plugin en vCenter Server Virtual Appliance (vcsa) o Windows desde la utilidad de registro. Debe cambiar el registro del plugin de vCenter en cada instancia de vCenter Server donde necesite usar el plugin.</block>
-  <block id="56f4bca23bb3dd45148dc7171511b7e5" category="paragraph">Este procedimiento de actualización cubre los siguientes escenarios de actualización.</block>
   <block id="04e630ae5e9700f09b6ca3715246283d" category="open-title">Plugin de Element para vCenter 5.0 y versiones posteriores</block>
   <block id="61517793d4523320c7cd75e303ad36ff" category="list-text">Actualice a un HTML5 8.0 o 7.0 vSphere Web Client.</block>
   <block id="787e0e54cc17d9dd6bbd7cf4c4fbc14d" category="admonition">El plugin de Element para vCenter 5.0 y versiones posteriores no es compatible con vCenter Server 6.7 y 6.5.</block>
@@ -6077,7 +6076,6 @@
   <block id="8157d1d3bb72f3ce50b0672f12f201dd" category="list-text">Seleccione examinar para localizar el paquete que guardó y cargarlo.</block>
   <block id="4ac581155f2c6a4a3a056078e2b122a1" category="list-text">Abra la interfaz de usuario de API DE REST en el nodo de gestión:</block>
   <block id="badb045d93b6de2fe8d2a1a664b92d6f" category="paragraph">Este procedimiento de actualización cubre los siguientes escenarios de actualización:</block>
-  <block id="0c6a507d40e276c8d0426facc36aaeca" category="list-text">Actualice al plugin de Element para vCenter Server 5.0 o 5.1.</block>
   <block id="609cfd925544c2aaccb703dcb95eed4d" category="admonition">Cuando se actualiza desde el plugin de Element para vCenter Server 4.x a 5.x, los clústeres ya configurados con el plugin se pierden porque no se pueden copiar los datos de una instancia de vCenter en un plugin remoto. Debe volver a añadir los clústeres al plugin remoto. Esta es una actividad que solo debe hacer una vez al actualizar desde un plugin local a un plugin remoto.</block>
   <block id="4edf62fd94cfb84b727afbee52aa8128" category="list-text">La página de registro del plugin de vCenter para el plugin de Element para vCenter Server 5.x:</block>
   <block id="04bac97a16b610a555c29c398dc04860" category="paragraph">La ficha *almacenamiento* muestra los clústeres de almacenamiento que forman parte de la instalación. Si el control de cloud híbrido de NetApp no permite acceder a un clúster, no se mostrará en la página *actualizaciones*. Si los clústeres ejecutan Element 12.0 o una versión posterior, se mostrará la versión actual del paquete de firmware indicado para estos clústeres. Si los nodos de un solo clúster tienen diferentes versiones de firmware en ellos o mientras la actualización progresa, verá *multiple* en la columna *Versión del paquete de firmware actual*. Puede seleccionar *Multiple* para desplazarse a la página *Nodes* para comparar las versiones de firmware. Si todos los clústeres ejecutan versiones de Element anteriores a 12.0, no se mostrará ninguna información sobre los números de versión del bundle de firmware. Esta información también está disponible en la página *Nodes*. Consulte <block ref="4d8bfbcb84a29a1601595359b67752e6" category="inline-link-macro-rx"></block>.</block>
@@ -6103,4 +6101,5 @@
   <block id="e3b4df69e2fe4e8545e5e0240eada6a2" category="list-text"><block ref="e3b4df69e2fe4e8545e5e0240eada6a2" category="inline-link-rx"></block></block>
   <block id="631923a687ff82d68973d99b95597b47" category="inline-link">Página SolidFire y Element Resources</block>
   <block id="238c5b123e3473c57e2925edccb205c2" category="list-text"><block ref="238c5b123e3473c57e2925edccb205c2" category="inline-link-rx"></block></block>
+  <block id="3a2bbd221f9a6d667af34b16ef1c1a32" category="list-text">Actualice al plugin de Element para vCenter Server 5.1 o 5.0.</block>
 </blocks>

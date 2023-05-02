@@ -24,6 +24,9 @@ Después de la actualización, el nodo de computación arranca en ESXi y funcion
 | Modelo | Versión mínima del BMC | Versión mínima del BIOS 
 
 
+| H300E/H500E/H700E | 6.84.00 | NA2.1 
+
+
 | H410C​ | Todas las versiones compatibles (no se requiere actualización)​ | Todas las versiones compatibles (no se requiere actualización)​ 
 
 

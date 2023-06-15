@@ -93,7 +93,8 @@ NOTE: Se le pedirá que inicie sesión con sus credenciales del sitio de soporte
 
 == Firmware de almacenamiento
 
-* link:rn_storage_firmware_2.164.0.html["Notas de la versión del paquete de firmware de almacenamiento 2.164.0"] _NEW_
+* link:rn_storage_firmware_2.175.0.html["Notas de la versión del paquete de firmware de almacenamiento 2.175.0"] _NEW_
+* link:rn_storage_firmware_2.164.0.html["Notas de la versión del paquete de firmware de almacenamiento 2.164.0"]
 * link:rn_storage_firmware_2.150.html["Notas de la versión del paquete de firmware de almacenamiento 2.150"]
 * link:rn_storage_firmware_2.146.html["Notas de la versión del paquete de firmware de almacenamiento 2.146"]
 * link:rn_storage_firmware_2.99.2.html["Notas de la versión del paquete de firmware de almacenamiento 2.99.2"]

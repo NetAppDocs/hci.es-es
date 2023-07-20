@@ -99,7 +99,6 @@
   <block id="4d41fb1211aa5ce58e5235fb983f1a15" category="list-text">Inicie sesión en NetApp Hybrid Cloud Control proporcionando las credenciales de administrador del clúster de almacenamiento de NetApp HCI.</block>
   <block id="9b6c54a62f57f89342aae003cf762345" category="list-text">Haga clic en *expandir* en la esquina superior derecha de la interfaz.</block>
   <block id="c279fa7b9df4852c4e23caa58f534561" category="paragraph">El explorador abre el motor de implementación de NetApp.</block>
-  <block id="053ab309f18a77ef5149424304d1c86d" category="list-text">Inicie sesión en el motor de implementación de NetApp. Para ello, proporcione las credenciales de administrador del clúster de almacenamiento de NetApp HCI.</block>
   <block id="9c949590f3665d51de542591b1677bea" category="list-text">En la página *Bienvenido*, haga clic en *Sí* y haga clic en *continuar*.</block>
   <block id="81ca71999d078ea8378ca36814ab29e3" category="list-text">En la página *Licencia de usuario final*, lea el Contrato de licencia de usuario final de VMware y haga clic en *Acepto* para aceptar los términos y haga clic en *continuar*.</block>
   <block id="736a8559e93194c56ffc906d359a1fcc" category="list-text">En la página *vCenter*, complete los siguientes pasos:</block>
@@ -1993,9 +1992,7 @@
   <block id="a61d8a4fcaa8b59b1d8f1d63aada7783" category="summary">Versiones de firmware y controlador compatibles con el software NetApp HCI y NetApp Element.</block>
   <block id="6563446976572a0b32d68f15a2be569f" category="paragraph">Versiones de firmware y controlador ESXi compatibles para las versiones de NetApp HCI y firmware para los nodos de almacenamiento NetApp HCI.</block>
   <block id="136c07ee64e1881b929de11861c01b0f" category="inline-link-macro">Nodos de almacenamiento</block>
-  <block id="bf44a0123ec45362af49b3862557cdd8" category="paragraph"><block ref="f4e8c07388940da9080e74e50960909d" category="inline-link-macro-rx"></block>* H610S * H410S</block>
   <block id="0a90ae9733f3b799ab6f5203099a1799" category="inline-link-macro">Nodos de computación</block>
-  <block id="a82f3d9d22bfe1382d03945f3377eb65" category="paragraph"><block ref="4fe99558e9030b1914f3007a88f2f74d" category="inline-link-macro-rx"></block>* H615C * H610C * H410C * H300E/H500E/H700E</block>
   <block id="ebfb815303c6dcd5863912baec2c3408" category="summary">Aprenda a acceder al motor de implementación de NetApp asignando manualmente las direcciones IP a los nodos NetApp HCI.</block>
   <block id="02e5232b9b52bafba284dc9c33914a13" category="paragraph">Es posible asignar manualmente direcciones IPv4 estáticas a las interfaces Bond1G y Bond10G de todos los nodos NetApp HCI para acceder al motor de implementación de NetApp e implementar NetApp HCI. No debe utilizar este método a menos que la red tenga requisitos especiales.</block>
   <block id="c8e003c61610ae54bff17cc191088740" category="list-text">Usted o el administrador de red completaron las tareas del documento instrucciones de instalación y configuración.</block>
@@ -6179,4 +6176,8 @@
   <block id="022beb4c9e2bdbe9e3398445a4fad6b2" category="cell">06 PB/15/2023</block>
   <block id="804066a6a5042090a2a0b25c55f38e72" category="cell">3,5</block>
   <block id="489901e715cade6fe0efc7e21e194576" category="cell">2,17</block>
+  <block id="d44403a904c0446f29d8bc5c2ed4770e" category="list-text">Inicie sesión en el motor de implementación de NetApp. Para ello, proporcione las credenciales de administrador del clúster de almacenamiento de NetApp HCI locales.</block>
+  <block id="60099f97c4a82ba2ee2d4a4d593b844b" category="admonition">No se puede iniciar sesión con las credenciales de protocolo ligero de acceso a directorios.</block>
+  <block id="f4e8c07388940da9080e74e50960909d" category="paragraph"><block ref="f4e8c07388940da9080e74e50960909d" category="inline-link-macro-rx"></block></block>
+  <block id="4fe99558e9030b1914f3007a88f2f74d" category="paragraph"><block ref="4fe99558e9030b1914f3007a88f2f74d" category="inline-link-macro-rx"></block></block>
 </blocks>

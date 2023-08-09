@@ -3641,15 +3641,11 @@
   <block id="e9c44bbfd795a5d63d74c6a77afee70d" category="summary">Los avisos legales proporcionan acceso a las declaraciones de copyright, marcas comerciales, patentes y mucho más.</block>
   <block id="30d965eef5ba25c6b9998ae38270b43e" category="doc">Avisos legales</block>
   <block id="6016a2b341113bf496b719905398ecd2" category="section-title">Derechos de autor</block>
-  <block id="09e95b77ffe81fe465a83ba99efad5c8" category="paragraph"><block ref="09e95b77ffe81fe465a83ba99efad5c8" category="inline-link-rx"></block></block>
   <block id="126a02652da6de02962cf1b654fd6376" category="section-title">Marcas comerciales</block>
   <block id="c4ce4761e466527d26b3e3d5ed1006fd" category="paragraph">NETAPP, el logotipo de NETAPP y las marcas enumeradas en la página de marcas comerciales de NetApp son marcas comerciales de NetApp, Inc. Los demás nombres de empresas y productos son marcas comerciales de sus respectivos propietarios.</block>
-  <block id="7aa531e9acfe2b98e34d2c92fe9846ff" category="paragraph"><block ref="7aa531e9acfe2b98e34d2c92fe9846ff" category="inline-link-rx"></block></block>
   <block id="be89498d2f8a22ce47c02ba9795fe2af" category="section-title">Estadounidenses</block>
   <block id="d0b19d36be2c5f16e9aef46c8a452d3d" category="paragraph">Puede encontrar una lista actual de las patentes propiedad de NetApp en:</block>
-  <block id="d7f1fbcf9ce4e42f705add574d262b2c" category="paragraph"><block ref="d7f1fbcf9ce4e42f705add574d262b2c" category="inline-link-rx"></block></block>
   <block id="56c34c6410dd45c5cec44149ad0ce037" category="section-title">Política de privacidad</block>
-  <block id="fc248f74f5e36542f7f5627b8610e9a3" category="paragraph"><block ref="fc248f74f5e36542f7f5627b8610e9a3" category="inline-link-rx"></block></block>
   <block id="c0227cef6f07a8cd2ac72f2945b031aa" category="section-title">Código abierto</block>
   <block id="9b73989307c1975dfa4d5e1581e4afe8" category="paragraph">Los archivos de notificación proporcionan información sobre los derechos de autor y las licencias de terceros que se utilizan en software de NetApp.</block>
   <block id="5c77617ea17cd390f132822ac7f42625" category="inline-link-macro">Aviso para NetApp HCI 1.11</block>
@@ -3831,7 +3827,6 @@
   <block id="36d3df322550ec93e10b1da2e3571f62" category="paragraph">Los nodos de computación NetApp HCI son elementos de hardware que proporcionan recursos de computación, como CPU, memoria y redes, que se necesitan para la virtualización en la instalación de NetApp HCI. Como cada servidor ejecuta VMware ESXi, la gestión de los nodos de computación NetApp HCI (añadir o quitar hosts) debe realizarse fuera del plugin dentro del menú hosts and Clusters de vSphere. Ya sea que se trate de un clúster de almacenamiento de cuatro nodos o de un clúster de almacenamiento de dos nodos, el número mínimo de nodos de computación sigue siendo dos para una implementación de NetApp HCI.</block>
   <block id="3366c96036458b6c9eedbdaccbd3dc34" category="section-title">Nodos de testigos</block>
   <block id="13637fc461c216e2f133872aa68284f3" category="paragraph">Los nodos de testimonio de NetApp HCI son máquinas virtuales que se ejecutan en nodos de computación en paralelo con un clúster de almacenamiento basado en el software Element. Los nodos de testigos no alojan los servicios de segmentos o bloques. Un nodo testigo habilita la disponibilidad de un clúster de almacenamiento en caso de que se produzca un fallo en un nodo de almacenamiento. Puede gestionar y actualizar los nodos de testigos de la misma forma que los de otros nodos de almacenamiento. Un clúster de almacenamiento puede tener hasta cuatro nodos testigos. Su propósito principal es garantizar que existan nodos de clúster suficientes para formar un quórum de conjunto válido.</block>
-  <block id="2c9355f24d4fb92e48ff0624b5165e70" category="paragraph">*Mejor práctica:* Configurar las VM del nodo testigo para utilizar el almacén de datos local del nodo de computación (establecido por NDE de forma predeterminada), no configurarlas en el almacenamiento compartido, como los volúmenes de almacenamiento SolidFire. Para evitar la migración automática de los equipos virtuales, establezca el nivel de automatización del planificador de recursos distribuidos (DRS) del nodo testigo en *Desactivado*. De este modo, se evita que ambos nodos testigos se ejecuten en el mismo nodo de computación y se cree una configuración de parejas que no sea de alta disponibilidad (ha).</block>
   <block id="ebd9bcbadb9c9789b855381b4b3c91a1" category="inline-link-macro">Requisitos de recursos del nodo de observación</block>
   <block id="ed227f04b96772f206d5427ed842cdf1" category="inline-link-macro">Requisitos de dirección IP de los nodos de observación</block>
   <block id="2558aa1c4b088a01ebbd23c6a72472a3" category="admonition">Más información acerca de <block ref="0614c1798bfcf6fa1dd2b630cd83d6d6" category="inline-link-macro-rx"></block> y.. <block ref="9f9f24cd869308f40f7cad49c3f42972" category="inline-link-macro-rx"></block>.</block>
@@ -6180,4 +6175,13 @@
   <block id="60099f97c4a82ba2ee2d4a4d593b844b" category="admonition">No se puede iniciar sesión con las credenciales de protocolo ligero de acceso a directorios.</block>
   <block id="f4e8c07388940da9080e74e50960909d" category="paragraph"><block ref="f4e8c07388940da9080e74e50960909d" category="inline-link-macro-rx"></block></block>
   <block id="4fe99558e9030b1914f3007a88f2f74d" category="paragraph"><block ref="4fe99558e9030b1914f3007a88f2f74d" category="inline-link-macro-rx"></block></block>
+  <block id="e74b413ef024dbf7c56a0e2cfe306bd8" category="paragraph">*Requerimiento*: Configure las VM de Witness Node para usar el almacén de datos local (predeterminado establecido por NDE) para el nodo de cálculo. No debe configurarlos en almacenamiento compartido, como los volúmenes de almacenamiento de SolidFire. Para evitar que las máquinas virtuales se migren automáticamente, establezca el nivel de automatización Distributed Resource Scheduler (DRS) para la máquina virtual Witness Node en *Disabled*. De este modo, se evita que ambos nodos testigos se ejecuten en el mismo nodo de computación y se cree una configuración de parejas que no sea de alta disponibilidad (ha).</block>
+  <block id="52009bb7ee17227f566cd26a02caee56" category="inline-link-macro"><block ref="52009bb7ee17227f566cd26a02caee56" category="inline-link-rx"></block></block>
+  <block id="a1a9afcf552a769c282769271829889a" category="paragraph"><block ref="a1a9afcf552a769c282769271829889a" category="inline-link-macro-rx"></block></block>
+  <block id="f99aa604031e5049799e73b5c3748a98" category="inline-link-macro"><block ref="f99aa604031e5049799e73b5c3748a98" category="inline-link-rx"></block></block>
+  <block id="5d545fe5152641e2ebe654e336e520e5" category="paragraph"><block ref="5d545fe5152641e2ebe654e336e520e5" category="inline-link-macro-rx"></block></block>
+  <block id="88e5eabd3917048b6927c42496b98f86" category="inline-link-macro"><block ref="88e5eabd3917048b6927c42496b98f86" category="inline-link-rx"></block></block>
+  <block id="dd38f906b37d412de7d1c1dcf4cbf31c" category="paragraph"><block ref="dd38f906b37d412de7d1c1dcf4cbf31c" category="inline-link-macro-rx"></block></block>
+  <block id="8acb58cbd50ef1b468a020ee0bd351d3" category="inline-link-macro"><block ref="8acb58cbd50ef1b468a020ee0bd351d3" category="inline-link-rx"></block></block>
+  <block id="2352c4e1f4d0024ade0869e00e6243f4" category="paragraph"><block ref="2352c4e1f4d0024ade0869e00e6243f4" category="inline-link-macro-rx"></block></block>
 </blocks>

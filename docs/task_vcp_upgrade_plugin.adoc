@@ -27,11 +27,11 @@ NOTE: Los servicios de gestión 2.22.7 incluyen el plugin de Element para vCente
 --
 Este procedimiento de actualización cubre los siguientes escenarios de actualización:
 
-* Actualice al plugin de Element para vCenter Server 5.1 o 5.0.
+* Va a actualizar al plugin de Element para vCenter Server 5,2, 5,1 o 5,0.
 * Actualice a un HTML5 8.0 o 7.0 vSphere Web Client.
 +
 
-IMPORTANT: El plugin de Element para vCenter 5.0 y versiones posteriores no es compatible con vCenter Server 6.7 y 6.5.
+IMPORTANT: El plugin de Element para vCenter 5,0 o posterior no es compatible con vCenter Server 6,7 y 6,5.
 
 
 
@@ -140,11 +140,11 @@ NOTE: Esta acción crea una base de datos nueva y completa la instalación en vS
 +
 ** A partir del plugin de Element para vCenter Server 5.0, se muestra el punto de extensión NetApp Element Remote Plugin:
 +
-image::vcp_remote_plugin_icons_home_page.png[Muestra el punto de extensión del plugin después de una actualización o instalación correcta para el plugin de Element versión 5.10 o una versión posterior]
+image::vcp_remote_plugin_icons_home_page.png[Muestra el punto de extensión del plugin después de una actualización o una instalación correcta para el plugin de Element versión 5,10 o posterior]
 
 ** En el caso del plugin de Element para vCenter Server 4.10 o una versión anterior, los puntos de extensión NetApp Element Configuration y Management aparecen:
 +
-image::vcp_shortcuts_page_accessing_plugin.png[Muestra los puntos de extensión del plugin después de una actualización o instalación correcta para el plugin de Element 4.10 o una versión anterior]
+image::vcp_shortcuts_page_accessing_plugin.png[Muestra los puntos de extensión del plugin después de una instalación correcta o una actualización del plugin de Element versión 4,10 o anterior]
 
 +
 [NOTE]
@@ -163,7 +163,7 @@ Debería ver los detalles o detalles de la siguiente versión de una versión m�
 +
 [listing]
 ----
-NetApp Element Plug-in Version: 5.1
+NetApp Element Plug-in Version: 5.2
 NetApp Element Plug-in Build Number: 12
 ----
 

@@ -30,6 +30,7 @@ A continuación encontrará los enlaces a los requisitos y las tareas previas a 
 * link:hci_prereqs_environmental.html["Requisitos ambientales"]
 * link:hci_prereqs_protection_domains.html["Dominios de protección"]
 * link:hci_prereqs_witness_nodes.html["Requisitos de recursos de nodo de observación para clústeres de almacenamiento de dos nodos"]
+* link:hci_prereqs_deployment_configuration_restriction.html["Restricciones en la configuración de la implementación"]
 
 
 [discrete]

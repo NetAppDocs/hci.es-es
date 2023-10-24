@@ -331,7 +331,7 @@ sidebar:
     - title: Quite nodos de testigos después de expandir el clúster
       url: "/docs/task_hci_removewn.html"
   - title: Use Rancher en NetApp HCI
-    url: "/docs/concept_rancher_concept.html"
+    url: "/docs/concept_rancher_product_overview.html"
   - title: Mantenimiento de hardware H-Series
     entries:
     - title: Descripción general del mantenimiento de hardware H-Series

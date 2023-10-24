@@ -1,6 +1,6 @@
 ---
 sidebar: sidebar 
-permalink: docs/concept_rancher_index.html 
+permalink: docs/concept_rancher_concept.html 
 summary: A partir de los servicios de gestión 2.21.61, Rancher ya no es compatible con las implementaciones existentes y nuevas de Rancher. Puede continuar administrando Rancher utilizando versiones anteriores de servicios de administración. 
 keywords: netapp, hci, rancher, control plane, catalog, cluster, kubernetes 
 ---

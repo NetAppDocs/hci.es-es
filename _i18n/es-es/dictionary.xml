@@ -934,20 +934,7 @@
   <block id="aaeb8011e825f6e35c3a11da3b06ae8e" category="list-text">Seleccione *valor predeterminado de fábrica*, seleccione el botón de opción *Eliminar ajustes actuales y configure los valores predeterminados del usuario EN ADMIN/ADMIN*:</block>
   <block id="f77361b272ce81d8275727f7b1a756a8" category="list-text">Seleccione *Restaurar*.</block>
   <block id="51cb13d5d7f53d14e1177bc7209fd917" category="list-text">Cierre sesión y, a continuación, vuelva a iniciar sesión para confirmar que las credenciales se han modificado.</block>
-  <block id="4365aa4d62fcaed8a61f5851f7c63acc" category="section-title">Actualice el firmware del BMC en el nodo</block>
-  <block id="e64e1f5e233bff07158f07da3f6f71dc" category="inline-link-macro">Sitio de soporte de NetApp (se requiere inicio de sesión)</block>
-  <block id="4cd4d7d72d12ae588ded720ce09eb6be" category="paragraph">Después de sustituir el nodo de computación, es posible que tenga que actualizar la versión de firmware. Puede descargar el archivo de firmware más reciente en el menú desplegable del <block ref="abee0fa17807b632b354ed0eee4c1a88" category="inline-link-macro-rx"></block>.</block>
   <block id="86e446cf24d6610677a2c50b9cdc9236" category="list-text">Inicie sesión en la interfaz de usuario del controlador de administración de la placa base (BMC).</block>
-  <block id="2a0625a35fb4af01157e81573ba8eeda" category="list-text">Seleccione *Mantenimiento &gt; actualización del firmware*.</block>
-  <block id="447bf1c51f518d302e2efefb20e4f3e5" category="image-alt">Muestra la navegación de la interfaz de usuario del BMC para las actualizaciones de firmware.</block>
-  <block id="5d3ccc6c1013f8038b1f86a92db0c184" category="list-text">Desde la consola del BMC, seleccione *Mantenimiento*.</block>
-  <block id="051af6c885ceb71e22b881985fe7c46c" category="image-alt">La muestra la pantalla de mantenimiento en la interfaz de usuario del BMC.</block>
-  <block id="5f60cd8039f9c554b92de593bbb6a0a2" category="list-text">En la ficha Mantenimiento, seleccione *actualización del firmware* en la navegación de la izquierda de la interfaz de usuario y seleccione *Entrar en modo de actualización*.</block>
-  <block id="67c015407a3660cd7c1736c3cbf43dd0" category="image-alt">Muestra la pantalla de actualización del firmware en la interfaz de usuario del BMC.</block>
-  <block id="0356ec6b4d587e5f4d2782c817a2e96b" category="list-text">Seleccione *Sí* en el cuadro de diálogo de confirmación.</block>
-  <block id="7874642886c22920789477d73255c589" category="list-text">Seleccione *examinar* para seleccionar la imagen del firmware que desea cargar y seleccione *cargar firmware*. Cargar firmware desde una ubicación fuera de las proximidades directas del nodo puede provocar largos tiempos de carga y posibles tiempos de espera.</block>
-  <block id="9ca6aab24c6382de412d4fb67990fbb9" category="list-text">Permita las comprobaciones de configuración Preserve y seleccione *Iniciar actualización*. La actualización debería tardar aproximadamente 5 minutos. Si el tiempo de carga supera los 60 minutos, cancele la carga y transfiera el archivo a una máquina local cerca del nodo. Si se agota el tiempo de espera de la sesión, es posible que vea una serie de alertas al intentar volver a iniciar sesión en el área de actualización del firmware de la interfaz de usuario de BMC. Si cancela la actualización, se le redirigirá a la página de inicio de sesión.</block>
-  <block id="fe29f01ceefdfc2a26d419451331a7de" category="list-text">Una vez finalizada la actualización, seleccione *Aceptar* y espere a que se reinicie el nodo. Inicie sesión después de la actualización y seleccione *sistema* para comprobar que la versión de *Revisión de firmware* coincide con la versión que ha cargado.</block>
   <block id="8eb6b37075837187e3cf3f0539ba2d68" category="summary">Aprenda a añadir nuevos grupos de acceso de volúmenes para trabajar con volúmenes de almacenamiento de NetApp HCI, quitar grupos de acceso de volúmenes del sistema, editar los grupos de acceso de volúmenes existentes y ver detalles de los grupos de acceso de volúmenes.</block>
   <block id="43c95975fceac67e14abe3895f6650b5" category="doc">Permite crear y gestionar grupos de acceso de volúmenes</block>
   <block id="aa1879f62910b82f0a9cf5d153809311" category="paragraph">Se pueden crear nuevos grupos de acceso de volúmenes, realizar cambios en el nombre, los iniciadores asociados o los volúmenes asociados de los grupos de acceso, o eliminar los grupos de acceso de volúmenes existentes mediante NetApp Hybrid Cloud Control.</block>
@@ -5973,33 +5960,6 @@
   <block id="9a273d2d550df11ef961cf667f623547" category="sidebar">Amplíe los recursos informáticos y de almacenamiento de NetApp</block>
   <block id="efaccef33aabd635656b681f92a298ea" category="sidebar">Mantenimiento de hardware H-Series</block>
   <block id="93168a8084b3e838d2932c4734bd234e" category="sidebar">Versiones anteriores</block>
-  <block id="be11c74c1dd7f307bb80183a90dc2067" category="sidebar">Manos a la obra</block>
-  <block id="7d0ee6fed10d3d4e5c9ee496729ab519" category="sidebar">Notas de la versión</block>
-  <block id="33871b6190a8d5adbe8b15282054766c" category="sidebar">Novedades</block>
-  <block id="01064f33f360eefba819bf9542c0486b" category="sidebar">Instale y mantenga el hardware</block>
-  <block id="147fc8b7d94adc0dceb5978ab928f776" category="sidebar">Instalación de hardware H-Series</block>
-  <block id="09af8dd99d422c917dcb27847056b045" category="sidebar">Mantenimiento de hardware H-Series</block>
-  <block id="bc2592cdeeae26af69f28b4f6a1c8ca0" category="sidebar">Instale NetApp HCI</block>
-  <block id="96e1a5a82d70a24f161f0adb6e19ac8d" category="sidebar">Información general sobre la instalación y la implementación</block>
-  <block id="8a6e336622cf399a6453e4659f2a6147" category="sidebar">Inicie la implementación con el motor de implementación de NetApp</block>
-  <block id="a54d0ac20b8277a267fb90e8c0b05032" category="sidebar">Realizar tareas posteriores a la implementación</block>
-  <block id="cfe80b2a0cabf734adc7b7c1613cfe4f" category="sidebar">Utilice NetApp HCI</block>
-  <block id="930dca22f6f735a61fd8f484808fecb3" category="sidebar">Gestione mediante el control del cloud híbrido de NetApp</block>
-  <block id="6cb5dfacb4ee1684b5483221bfcf580c" category="sidebar">Utilice el plugin de NetApp Element para vCenter Server</block>
-  <block id="d02b5df8c0bf5a555ea650be898817f7" category="sidebar">Amplíe NetApp HCI</block>
-  <block id="748ace58318ab9d82392d680b07e89e6" category="sidebar">Actualice NetApp HCI</block>
-  <block id="f7731734f4507319f744fe2c8158536a" category="sidebar">Solucionar problemas de NetApp HCI y Rancher</block>
-  <block id="eeabaf7c41bcd50a6a02694c070dbfb4" category="sidebar">Restablezca BMC en los nodos de computación</block>
-  <block id="166868e0f588717c1c62116a03c9b979" category="sidebar">Más artículos de la base de conocimiento</block>
-  <block id="2a9dbfa4b74c53d7304fc8b79a1874d3" category="sidebar">NetApp</block>
-  <block id="fcf140abed196b8eba71c45f21312bce" category="sidebar">Soluciones NetApp</block>
-  <block id="81a123ccab93cd947289b672b0e50348" category="sidebar">Demostraciones y tutoriales</block>
-  <block id="45a52e6c046bce2a0f9f5253cc23fbd6" category="sidebar">Biblioteca de vídeos de NetApp HCI</block>
-  <block id="9135ac6f13de11d3b4b9f2f98ff9bcb8" category="sidebar">Servicios de aprendizaje de NetApp</block>
-  <block id="813011e2103649bb71f124adedcc10ea" category="sidebar">Blogs y comunidad</block>
-  <block id="a310588c148d934b9b30c31802d4a30b" category="sidebar">Comunidad de NetApp</block>
-  <block id="213686afc3803be7caa09348765467fe" category="sidebar">Dónde obtener ayuda</block>
-  <block id="389672366ff11f72a82c5c495b9b5159" category="sidebar">Documentación de NetApp HCI 1.8</block>
   <block id="811c3e17cdcbc0d2918ccd135b702fad" category="list-text">(Opcional) verifique que todas las operaciones de I/o de los hosts se hayan detenido:</block>
   <block id="49fd465e6accbc44477708b2756a0289" category="list-text">Desactive la actividad de I/o en el lado del host mediante los comandos adecuados para uno o más hipervisores que se utilizan.</block>
   <block id="47aa9240e90a7b94289f8a7cf08853f9" category="list-text">En la interfaz de usuario del clúster, seleccione *Reporting* &gt; *Overview*. No debe haber ninguna actividad en el gráfico "Cluster Input/Output".</block>
@@ -6190,4 +6150,9 @@
   <block id="4b07d1c342b03364f7120990720b53ef" category="section-title">Paso 5: Vuelva a poner en marcha nodos testigos para clústeres de almacenamiento de dos y tres nodos</block>
   <block id="df0f8acf74958be223bdd3dabcce5038" category="inline-link">No se pueden iniciar las actualizaciones de SolidFire y HCI debido a un error de carga del paquete de actualización</block>
   <block id="b9bbae8efe5c0f15ffba3f05d619b861" category="list-text">A partir del 2023 de noviembre, no puede iniciar una actualización de componente con control de nube híbrida de NetApp o API de REST porque los certificados de clave de firma (privados y públicos) caducaron el 5 de noviembre de 2023. Puede resolver este problema siguiendo la solución que se explica en el artículo de la base de conocimientos<block ref="43e83b9864cac922c7475bad0e74a40f" category="inline-link-rx"></block>.</block>
+  <block id="8daa3151587347980e74b151202ea3b6" category="list-text">Configure su BMC, consulte <block ref="785a710f4c6946c37cc4ffd8e78657df" category="inline-link-macro-rx"></block> para obtener más detalles.</block>
+  <block id="a0701e6fb9d20d52e56b635ed36b87f5" category="inline-link">Cómo deshabilitar el acceso de interfaz de usuario web de BMC en sistemas HCI y SolidFire H-Series</block>
+  <block id="6eacafa95777fb1e6eb8520265b58990" category="list-text">Consulte el artículo de la base de conocimientos de NetApp<block ref="241ab5b011155d72deeb18c5d431446f" category="inline-link-rx"></block> Para determinar si es necesario desactivar el acceso web de BMC.</block>
+  <block id="65c8d097794b4f73719e82bebe86d855" category="section-title">Actualice el firmware del nodo</block>
+  <block id="08a91b27b8b81bd9d0b64ba51e61dd98" category="paragraph">Después de sustituir el nodo de computación, es posible que tenga que actualizar la versión de firmware. Consulte <block ref="502434424b58174296cfde9ecff2397f" category="inline-link-macro-rx"></block> para obtener más detalles.</block>
 </blocks>

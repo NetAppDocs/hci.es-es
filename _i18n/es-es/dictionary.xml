@@ -4771,11 +4771,6 @@
   <block id="9385b032418674e92472a8b4a2ae5cdf" category="list-text">(Nodo de gestión 12.0 y posterior con servidor proxy) ha actualizado el control de cloud híbrido de NetApp a los servicios de gestión versión 2.16 antes de configurar un servidor proxy.</block>
   <block id="0406c3e25004e3d1dddbc367d2c4010f" category="paragraph">El nodo de gestión Element 12.2 es una actualización opcional. No es necesario para las puestas en marcha existentes.</block>
   <block id="7f10e6e99f08f394e823f7104513126a" category="paragraph">Antes de seguir este procedimiento, debe tener conocimientos de <block ref="6f73bacaba2e470844b654fcbffb809f" category="inline-link-macro-rx"></block> y si desea usarlos o no. Los volúmenes persistentes son opcionales, pero se recomienda para la recuperación de datos de configuración del nodo de gestión en caso de pérdida de una máquina virtual (VM).</block>
-  <block id="d65a2ab43bcac7efebde7effc9d142f8" category="list-text"><block ref="4e8e62755aa10b5d2420c05d87c0085a" category="inline-xref-macro-rx"></block></block>
-  <block id="c92609be7302c756d6d918553df475c1" category="list-text"><block ref="d9e86326331a25418b718094ae602c19" category="inline-xref-macro-rx"></block></block>
-  <block id="0267f7e06220d0fa6fb42578b5746da3" category="list-text"><block ref="b41cb2f7bd156a4035cdf9347b89cebe" category="inline-xref-macro-rx"></block></block>
-  <block id="067315cbc6353502fa36a4f8722badbd" category="inline-xref">(Solo NetApp HCI) Configure los activos de nodos de computación</block>
-  <block id="cc41647231a76da233743c53a496e137" category="list-text"><block ref="fab01553c96541ce7ac54638294897d8" category="inline-xref-macro-rx"></block></block>
   <block id="7b4b2bec7b806d58982537647a92deef" category="list-text">Seleccione *Descargar la versión más reciente* y acepte el EULA.</block>
   <block id="bb79fe0e6bf117510635c505cc16e74d" category="list-text">Cree una nueva máquina virtual de 64 bits desde el hipervisor con la siguiente configuración:</block>
   <block id="4cb04e22051dcc88da6d140ef391aab8" category="list-text">Tipo de adaptador de almacenamiento definido en LSI Logic Parallel</block>
@@ -4783,7 +4778,6 @@
   <block id="4aec8fb7a6a9c5631ebb25a7b86d9ac5" category="admonition">No encienda la VM antes del paso que indique hacerlo más adelante en este procedimiento.</block>
   <block id="1632315c8463eb1e9d1b980297d68c37" category="list-text">Adjunte ISO a la máquina virtual y arranque en la imagen de instalación .iso.</block>
   <block id="faa024991ac61fa39b20d61ed2e88ada" category="list-text">Active la máquina virtual del nodo de gestión cuando se complete la instalación.</block>
-  <block id="f894cbc944582e1f10fec4bf2a0639f0" category="section-title">Cree el administrador del nodo de gestión y configure la red</block>
   <block id="c19f63a05ffe39159954c2b2fd892582" category="list-text">Si hay un servidor de protocolo de configuración dinámica de hosts (DHCP) en la red que asigna direcciones IP con una unidad de transmisión máxima (MTU) inferior a 1500 bytes, debe realizar los siguientes pasos:</block>
   <block id="b44234e2a29812de715ddf5ea19c15fc" category="list-text">Coloque temporalmente el nodo de gestión en una red vSphere sin DHCP, como iSCSI.</block>
   <block id="f35b648abbd5fe5949ea297ee6cef3b9" category="list-text">Reinicie la máquina virtual o reinicie la red de la máquina virtual.</block>
@@ -4795,7 +4789,6 @@
   <block id="e7538fbaab3148e24ff8ae41d09df5ce" category="list-text">[[substep_f_install_config_Time_SYNC]]Deshabilitar la sincronización de hora con el host a través del hipervisor (el siguiente es un ejemplo de VMware):</block>
   <block id="2d80cb22364fea2daaca797ae1d938cb" category="inline-link-macro">comando setup</block>
   <block id="a482c646f7f8199c69090c0d13cac33b" category="admonition">No edite el NTP después de completar la configuración de sincronización de hora porque afecta al NTP cuando ejecuta el <block ref="418ec8b5cff4068b256dfd7e9fc5ded7" category="inline-link-macro-rx"></block> en el nodo de gestión.</block>
-  <block id="627bbdc5a7179606b85a5d6ccb6f65e1" category="section-title">Configure el nodo de gestión</block>
   <block id="5a808c62f4f9557c4df556d6a230ba7c" category="list-text">Configure y ejecute el comando de configuración del nodo de gestión:</block>
   <block id="fea104dd45bc0e75d821ddd5af2b02d0" category="admonition">La forma abreviada del nombre del comando está entre paréntesis ( ) y se puede sustituir por el nombre completo.</block>
   <block id="3f124867257c579e7ba689baed3d4f45" category="list-text">*--mnode_admin_user (-mu) [username]*: El nombre de usuario de la cuenta de administrador del nodo de gestión. Probablemente este sea el nombre de usuario de la cuenta de usuario que utilizó para iniciar sesión en el nodo de gestión.</block>
@@ -4819,7 +4812,6 @@
   <block id="aabee241823de4ff993b60d0a196a387" category="list-text">(Opcional) Use Parameter help si necesita información adicional acerca de cada parámetro:</block>
   <block id="f89c180fd45cb0275c5ee18e59d2b43d" category="list-text">*--help (-h)*: Devuelve información acerca de cada parámetro. Los parámetros se definen como obligatorios u opcionales según la puesta en marcha inicial. Los requisitos de los parámetros de actualización y nueva puesta en marcha pueden variar.</block>
   <block id="79032d0c879c3afbbb570dd870eb09e1" category="list-text">Ejecute el<block ref="73028873f2b0a018096b6a3d871634b5" prefix=" " category="inline-code"></block> comando.</block>
-  <block id="7ea2768c656768f853cd68b9066eba0f" category="section-title">Configurar activos de controladora</block>
   <block id="4240350efa82cb4b2d0dcd00f64f496b" category="list-text">Busque el ID de instalación:</block>
   <block id="81b4d8ce3b6d3d31bcc065c5589192ab" category="list-text">Desde un explorador, inicie sesión en la API DE REST del nodo de gestión:</block>
   <block id="ed4faf2b135a0f2d74eef06f6fd8899e" category="list-text">Vaya a la MVIP de almacenamiento e inicie sesión. Esta acción hace que se acepte el certificado para el siguiente paso.</block>
@@ -4830,7 +4822,6 @@
   <block id="8cfb9a9c7c3001a95af6d09549cdabaa" category="list-text">Seleccione *POST /assets/{Asset_id}/controllers* para agregar un subactivo de controlador.</block>
   <block id="9db4acd10c15ec173e6516c347342e25" category="admonition">Debe crear un nuevo rol HCC de NetApp en vCenter para añadir un subsistema de controladora. Este nuevo rol de HCC de NetApp limitará la visión de los servicios de los nodos de gestión a activos de NetApp. Consulte <block ref="8fe5279440ee3c239e840ed9b8e10ddd" category="inline-link-macro-rx"></block>.</block>
   <block id="e2e193a380a16845739e1445cfe23fde" category="list-text">Introduzca los valores de carga útil necesarios con el tipo<block ref="e10ca1adb349a5228f7573a244805247" prefix=" " category="inline-code"></block> De aplicaciones y vCenter.</block>
-  <block id="421226b233bd18f9c1f8d179419a2f39" category="list-text">(Solo para NetApp HCI) Añada un activo de nodo de computación a los activos conocidos del nodo de gestión:</block>
   <block id="59cb038ca0d26b60e9eda25d59ec865b" category="list-text">Seleccione *POST /assets/{Asset_id}/Compute-Nodes* para agregar un subactivo de nodo de computación con credenciales para el activo de nodo de computación.</block>
   <block id="ea32544c4914661e6b948f2891dd6a83" category="list-text">En la carga útil, introduzca los valores de carga útil necesarios tal y como se definen en la ficha Modelo . Introduzca<block ref="b0429e6f6291e7688c57a970fe0a03bc" prefix=" " category="inline-code"></block> como<block ref="599dcce2998a6b40b1e38e8c6006cb0a" prefix=" " category="inline-code"></block> e introduzca la etiqueta de hardware guardada durante un paso anterior para<block ref="881962cb2470d984f65313a8e4ceec64" prefix=" " category="inline-code"></block>.</block>
   <block id="891d7cb5314c1395a5f98467dc959053" category="inline-link-macro">Configurar un NIC de almacenamiento</block>
@@ -5028,7 +5019,6 @@
   <block id="f308e6ca453d47a2876df6eae740d8f8" category="cell">Tamaño de disco</block>
   <block id="a8eb35236338fefbad16baa7af1c75ba" category="cell">67 GB</block>
   <block id="845f62e2611daf20a77cdbef343a155b" category="paragraph">NetApp HCI solo admite determinados modelos de nodo de almacenamiento en clústeres de almacenamiento de dos o de tres nodos. Para obtener más información, consulte las notas de la versión de su versión de NetApp HCI.</block>
-  <block id="edc66b1482b45fd0e89fdbe4ba094191" category="admonition">Cuando el proceso de instalación de NetApp HCI instala nodos testigo, se almacena una plantilla de máquina virtual en VMware vCenter que puede utilizar para volver a poner en marcha un nodo de testigo en caso de que se elimine, se pierda o se dañe por accidente. También puede utilizar la plantilla para volver a poner en marcha un nodo de testigo si necesita sustituir un nodo de computación con errores que alojaba el nodo de testigo. Para obtener instrucciones, consulte la sección *nodos de testigo de nueva puesta en marcha para clústeres de almacenamiento de dos y tres nodos* <block ref="0deb95019659c8847f806617fd301765" category="inline-link-macro-rx"></block>.</block>
   <block id="d40819e9e843e97335bf320aeb8d5ac1" category="summary">Es posible utilizar el nodo de gestión para habilitar el acceso al soporte de NetApp para la solución de problemas.</block>
   <block id="e606a329fd1c8e2f2543e5fd1dce6af5" category="doc">Inicie una sesión de soporte remota de NetApp</block>
   <block id="1b0f1fe17217f456f0c7b1311a828304" category="paragraph">Si necesita soporte técnico para su sistema NetApp HCI, el soporte de NetApp puede conectarse de forma remota con su sistema. Para iniciar una sesión y tener acceso remoto, el soporte de NetApp puede abrir una conexión de Secure Shell (SSH) inversa a su entorno.</block>
@@ -5570,8 +5560,6 @@
   <block id="9773e94a42728b0133d0ffe5e9fd9f44" category="list-text">*Prohibir fragmentación*: Activar el indicador DF (no fragmentar) para los paquetes ICMP.</block>
   <block id="9cea15d48c9b5a9632827b358396e207" category="doc">Novedades en NetApp HCI</block>
   <block id="9919e22324d983d998afd33f187a0a61" category="paragraph">NetApp actualiza periódicamente NetApp HCI para ofrecerle nuevas funciones, mejoras y correcciones de errores. NetApp HCI 1.10 incluye el software Element 12.5 para los clústeres de almacenamiento.</block>
-  <block id="6f0ce5bfc09a3a4d8737b564d5879f31" category="inline-link">Conozca todas las novedades de Element 12.7</block>
-  <block id="f10aa2cb8c994fef24ceca1ee43e4208" category="admonition">El software Element 12.7 es la versión más reciente e incluye actualizaciones de componentes del sistema y de seguridad, mejoras operativas y problemas resueltos.<block ref="d071d61ca9198e87abb60c485f07eada" category="inline-link-rx"></block>.</block>
   <block id="53f59c169b2bb48ac0b8253252a06467" category="list-text">La <block ref="72c4f5351976259ad654b85496cb20be" category="inline-xref-macro-rx"></block> La sección describe las nuevas funciones y actualizaciones de NetApp HCI versión 1.10.</block>
   <block id="2a0ce9a56c6130320cccb8a7f34ec593" category="list-text">La <block ref="18a6515b1da0f2a2d89c5832cee91752" category="inline-xref-macro-rx"></block> La sección describe las nuevas características y actualizaciones en Element 12.5.</block>
   <block id="3f1ab5f7c40b8fa8fd0a42ff36510c23" category="section-title">NetApp HCI 1.10</block>
@@ -6233,4 +6221,36 @@
   <block id="f0fe2934aa8d8cec985fef2e0c464532" category="list-text"><block ref="f0fe2934aa8d8cec985fef2e0c464532" category="inline-link-macro-rx"></block></block>
   <block id="08c1b18f2bce38d2bceb61af5b8c4c6e" category="list-text"><block ref="08c1b18f2bce38d2bceb61af5b8c4c6e" category="inline-link-macro-rx"></block></block>
   <block id="c1f2aa244c34463b7aea4f2b566f9420" category="list-text"><block ref="c1f2aa244c34463b7aea4f2b566f9420" category="inline-link-macro-rx"></block></block>
+  <block id="9c9a41bc801502e6500c79ea7586ba95" category="inline-link-macro">Vuelva a poner en marcha nodos de testigos para clústeres de almacenamiento de dos y tres nodos</block>
+  <block id="d0f20378e2595fa7956c455387d1bc5a" category="paragraph">Cuando el proceso de instalación de NetApp HCI instala nodos testigo, se almacena una plantilla de máquina virtual en VMware vCenter que puede utilizar para volver a poner en marcha un nodo de testigo en caso de que se elimine, se pierda o se dañe por accidente. También puede utilizar la plantilla para volver a poner en marcha un nodo de testigo si necesita sustituir un nodo de computación con errores que alojaba el nodo de testigo. Para obtener instrucciones, consulte <block ref="6fa44f1a6cd8ce6de51cb02b7ae12cc5" category="inline-link-macro-rx"></block>.</block>
+  <block id="3c72afcfca67f187b816a55135a243dd" category="inline-link-macro">Actualizar la versión de hardware de la máquina virtual</block>
+  <block id="4fff07540e1d83ac9775ec8030cce786" category="paragraph">Si va a realizar una actualización in situ de un nodo Witness existente a Element 12,8, antes de actualizar, debe asegurarse de que la versión de hardware de la máquina virtual del nodo Witness sea compatible con ESXi 6,7 (versión 14 de hardware de máquina virtual) o posterior según el entorno. Consulte <block ref="d1fe5954ed8bd3e53eba83ab0658a6e0" category="inline-link-macro-rx"></block>.</block>
+  <block id="6db7dd4182be7a1979ad403111fa8618" category="inline-link">Notas de la versión del software NetApp Element 12.8</block>
+  <block id="7d776811219f8ebb17adecaa976bd578" category="list-text"><block ref="53e04163346326834efd61306c0800b5" category="inline-link-rx"></block> _NUEVO_</block>
+  <block id="a175ee087381806b642bbcfee91690d5" category="inline-link">Conozca todas las novedades de Element 12.8</block>
+  <block id="669c1fb7e11e3bb5ca277eb16b4a55f4" category="admonition">El software Element 12,8 es la versión más reciente e incluye actualizaciones de seguridad y de componentes del sistema, mejoras operativas y problemas resueltos.<block ref="4f11681fa65d50fd10f6fc370da0cbe3" category="inline-link-rx"></block>.</block>
+  <block id="b036ebb7aa6b63db449d4df71f28c3cd" category="section-title">Paso 1: Actualice la versión del hardware de la VM en un nodo de gestión</block>
+  <block id="6bdecd9b5d3ab973ac36df911f986fc3" category="paragraph">Si va a realizar una actualización in situ de un nodo de gestión existente a Element 12,8, antes de actualizar, debe asegurarse de que la versión de hardware de máquina virtual del nodo de gestión sea compatible con ESXi 6,7 (versión 14 de hardware de máquina virtual) o posterior según el entorno.</block>
+  <block id="d334c1e547b1e27eae5f50bf46f786cd" category="admonition">También puede seguir estos pasos para actualizar la versión de hardware de la máquina virtual en los nodos de testigos.</block>
+  <block id="da356a9209429c8cb4f06565d719d2b8" category="list-text">Inicie sesión en vSphere Web Client como administrador de vCenter.</block>
+  <block id="1a331e443f5aee428076dfc1341e09b5" category="list-text">En el menú vSphere Client, seleccione *VMs* y *Templates*.</block>
+  <block id="f42849b7cb77e25b9a5601553a509100" category="list-text">Haga clic con el botón derecho en la máquina virtual y seleccione *Compatibilidad* &gt; *Actualizar compatibilidad de VM*.</block>
+  <block id="cf8716d5690805e881fbd8fa22fb282a" category="list-text">Seleccione ESXi 6,7 o una versión posterior, según la versión del entorno de vSphere.</block>
+  <block id="7473f663a4bbad1085e61ed9c976a50a" category="list-text">Una vez completada la actualización, seleccione *Vsphere client refresh* y verifique que la compatibilidad de VM esté en la versión deseada.</block>
+  <block id="6b17900bf8b7a52b1be75bbe68b2d77e" category="section-title">Paso 2: Actualice un nodo de gestión a Element 12,5 o una versión posterior</block>
+  <block id="d5bdcd035d3751961b201dd1c2261aa3" category="paragraph">Elija una de las siguientes opciones de actualización:</block>
+  <block id="6d8cd87a85946daeae42cb54aade3baa" category="section-title">Paso 1: Descargar ISO o OVA e implementar la VM</block>
+  <block id="90c4d8ddd76d9f5f86c144316cec5657" category="paragraph">Descargue el ISO o OVA adecuado desde el sitio de soporte de NetApp e instale la máquina virtual.</block>
+  <block id="c6913d34fefabb7329dba971ad99632d" category="section-title">Paso 2: Cree el administrador del nodo de gestión y configure la red</block>
+  <block id="8e1cc7b20e9f183452b777f8a4fb586d" category="paragraph">Una vez finalizada la instalación de la máquina virtual, cree el usuario administrador del nodo de gestión y configure la red del nodo de gestión.</block>
+  <block id="5e0472334bca93d0d28d3eeaaf723518" category="section-title">Paso 3: Configure la sincronización de tiempo</block>
+  <block id="6646ab3d83d88b5b34e61e3a58b244e8" category="paragraph">Antes de configurar el nodo de gestión, sincronice la hora entre el nodo de gestión y el clúster de almacenamiento.</block>
+  <block id="ef246c91c687e7d720eb49c5e2a4cd47" category="section-title">Paso 4: Configure el nodo de gestión</block>
+  <block id="9f150d20e38589485a1bb878b18c51e2" category="paragraph">Configure el nodo de gestión con<block ref="73028873f2b0a018096b6a3d871634b5" prefix=" " category="inline-code"></block> el comando.</block>
+  <block id="2cec258fd66ace0725a9af6922c80f3e" category="section-title">Paso 5: Configurar los activos del controlador</block>
+  <block id="b5d27a207b01cd3ca9fef9594d50836f" category="paragraph">Localice el ID de instalación y añada un activo de controladora de vCenter.</block>
+  <block id="bd6447e80251856484a25ace239c3873" category="section-title">Paso 6: (Solo NetApp HCI) Configurar activos de nodo de computación</block>
+  <block id="64391abac346294811422637c6d0a865" category="paragraph">Agregue un activo de nodo de cálculo a los activos conocidos del nodo de gestión</block>
+  <block id="975648a39ca92865d807bc35f02b5984" category="inline-link-macro">Aviso sobre el software Element 12.8</block>
+  <block id="d70cd205dfc4339579c798a35dc44462" category="list-text"><block ref="d70cd205dfc4339579c798a35dc44462" category="inline-link-macro-rx"></block></block>
 </blocks>

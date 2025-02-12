@@ -2,7 +2,7 @@
 sidebar: sidebar 
 permalink: docs/task_hcc_upgrade_management_node.html 
 summary: Como parte de una actualización del sistema NetApp HCI, se actualiza el nodo de gestión. 
-keywords: netapp, hci, on premise, cluster, management node, mNode, upgrade, 10, 11.0, 11.1, 11.3, 11.5, 11.7, 12.0, 12.2, 12.3, 12.3.1, 12.3.2, 12.3.x, 12.5, 12.7 
+keywords: netapp, hci, on premise, cluster, management node, mNode, upgrade, 10, 11.0, 11.1, 11.3, 11.5, 11.7, 12.0, 12.2, 12.3, 12.3.1, 12.3.2, 12.3.x, 12.5, 12.7, 12.8 
 ---
 = Actualice un nodo de gestión
 :allow-uri-read: 
@@ -16,8 +16,30 @@ Ya no se necesita actualizar el sistema operativo del nodo de gestión para actu
 
 NOTE: Si necesita información para actualizar los nodos de gestión 12.2 o una versión anterior, consulte https://docs.netapp.com/us-en/hci19/docs/task_hcc_upgrade_management_node.html["Documentación sobre la actualización del nodo de gestión NetApp HCI 1.9"^].
 
-.Opciones de actualización
-Seleccione una de las siguientes opciones:
+
+
+== Paso 1: Actualice la versión del hardware de la VM en un nodo de gestión
+
+Si va a realizar una actualización in situ de un nodo de gestión existente a Element 12,8, antes de actualizar, debe asegurarse de que la versión de hardware de máquina virtual del nodo de gestión sea compatible con ESXi 6,7 (versión 14 de hardware de máquina virtual) o posterior según el entorno.
+
+
+NOTE: También puede seguir estos pasos para actualizar la versión de hardware de la máquina virtual en los nodos de testigos.
+
+.Pasos
+. Inicie sesión en vSphere Web Client como administrador de vCenter.
+. En el menú vSphere Client, seleccione *VMs* y *Templates*.
+. Haga clic con el botón derecho en la máquina virtual y seleccione *Compatibilidad* > *Actualizar compatibilidad de VM*.
+. Seleccione *Sí*.
+. Seleccione ESXi 6,7 o una versión posterior, según la versión del entorno de vSphere.
+. Seleccione *OK*.
+. Una vez completada la actualización, seleccione *Vsphere client refresh* y verifique que la compatibilidad de VM esté en la versión deseada.
+
+
+
+
+== Paso 2: Actualice un nodo de gestión a Element 12,5 o una versión posterior
+
+Elija una de las siguientes opciones de actualización:
 
 * <<Actualice un nodo de gestión a la versión 12.5 o posterior desde la versión 12.3.x o posterior>>
 * <<Volver a configurar la autenticación mediante la API DE REST del nodo de gestión>>
@@ -31,14 +53,14 @@ NOTE: Si no actualiza secuencialmente los servicios de gestión seguidos por el 
 
 
 
-== Actualice un nodo de gestión a la versión 12.5 o posterior desde la versión 12.3.x o posterior
+=== Actualice un nodo de gestión a la versión 12.5 o posterior desde la versión 12.3.x o posterior
 
 Puede realizar una actualización sin movimiento del nodo de gestión desde la versión 12.3.x o posterior a la versión 12.5 o posterior sin necesidad de aprovisionar una nueva máquina virtual del nodo de gestión.
 
 
 NOTE: El nodo de gestión de Element 12.5 o posterior es una actualización opcional. No es necesario para las puestas en marcha existentes.
 
-.Lo que necesitará
+.Antes de empezar
 * La RAM de la máquina virtual del nodo de gestión es 24 GB.
 * El nodo de gestión que pretende actualizar es la versión 12.0 y utiliza redes IPv4. La versión 12.5 o posterior del nodo de gestión no admite IPv6.
 +
@@ -124,7 +146,7 @@ IMPORTANT: Si había deshabilitado anteriormente la funcionalidad SSH en el nodo
 
 
 
-== Volver a configurar la autenticación mediante la API DE REST del nodo de gestión
+=== Volver a configurar la autenticación mediante la API DE REST del nodo de gestión
 
 Se puede conservar el nodo de gestión existente si se actualizaron secuencialmente (1) y (2) el almacenamiento de Element. Si ha seguido un orden de actualización diferente, consulte los procedimientos para actualizar nodos de gestión sin movimiento.
 
@@ -157,7 +179,8 @@ El cuerpo de respuesta indica que la reconfiguración se ha realizado correctame
 
 
 
-[discrete]
+
+
 == Obtenga más información
 
 * https://docs.netapp.com/us-en/vcp/index.html["Plugin de NetApp Element para vCenter Server"^]

@@ -18,7 +18,7 @@ Puede instalar manualmente el nodo de gestión para el clúster que ejecuta el s
 
 Este proceso manual está dirigido a los administradores de NetApp HCI que no utilizan el motor de implementación de NetApp para la instalación de nodos de gestión.
 
-.Lo que necesitará
+.Antes de empezar
 * La versión del clúster ejecuta el software NetApp Element 11.3 o una versión posterior.
 * En la instalación utiliza IPv4. El nodo de gestión 11.3 no admite IPv6.
 +
@@ -55,19 +55,13 @@ El nodo de gestión Element 12.2 es una actualización opcional. No es necesario
 
 Antes de seguir este procedimiento, debe tener conocimientos de link:concept_hci_volumes.html#persistent-volumes["volúmenes persistentes"] y si desea usarlos o no. Los volúmenes persistentes son opcionales, pero se recomienda para la recuperación de datos de configuración del nodo de gestión en caso de pérdida de una máquina virtual (VM).
 
+
+
+== Paso 1: Descargar ISO o OVA e implementar la VM
+
+Descargue el ISO o OVA adecuado desde el sitio de soporte de NetApp e instale la máquina virtual.
+
 .Pasos
-. <<Descargue ISO o OVA e implemente la VM>>
-. <<Cree el administrador del nodo de gestión y configure la red>>
-. <<Configurar la sincronización de hora>>
-. <<Configure el nodo de gestión>>
-. <<Configurar activos de controladora>>
-. <<Configure compute node assets,(Solo NetApp HCI) Configure los activos de nodos de computación>>
-
-
-
-
-== Descargue ISO o OVA e implemente la VM
-
 . Descargue el OVA o ISO para su instalación desde https://mysupport.netapp.com/site/products/all/details/netapp-hci/downloads-tab["NetApp HCI"^] Página del sitio de soporte de NetApp:
 +
 .. Seleccione *Descargar la versión más reciente* y acepte el EULA.
@@ -112,8 +106,11 @@ NOTE: La instalación de un nodo de gestión con la imagen puede provocar un ret
 
 
 
-== Cree el administrador del nodo de gestión y configure la red
+== Paso 2: Cree el administrador del nodo de gestión y configure la red
 
+Una vez finalizada la instalación de la máquina virtual, cree el usuario administrador del nodo de gestión y configure la red del nodo de gestión.
+
+.Pasos
 . Con la interfaz de usuario de terminal (TUI), cree un usuario administrador del nodo de gestión.
 +
 
@@ -140,8 +137,11 @@ NOTE: Si necesita una NIC adicional para aislar el tráfico de almacenamiento, c
 
 
 
-== Configurar la sincronización de hora
+== Paso 3: Configure la sincronización de tiempo
 
+Antes de configurar el nodo de gestión, sincronice la hora entre el nodo de gestión y el clúster de almacenamiento.
+
+.Pasos
 . Asegúrese de que la hora se haya sincronizado entre el nodo de gestión y el clúster de almacenamiento mediante NTP:
 +
 
@@ -219,8 +219,11 @@ NOTE: No edite el NTP después de completar la configuración de sincronización
 
 
 
-== Configure el nodo de gestión
+== Paso 4: Configure el nodo de gestión
 
+Configure el nodo de gestión con `setup-mnode` el comando.
+
+.Pasos
 . Configure y ejecute el comando de configuración del nodo de gestión:
 +
 
@@ -282,8 +285,11 @@ NOTE: Utilice un nombre de cuenta único para volúmenes persistentes que sean d
 
 
 
-== Configurar activos de controladora
+== Paso 5: Configurar los activos del controlador
 
+Localice el ID de instalación y añada un activo de controladora de vCenter.
+
+.Pasos
 . Busque el ID de instalación:
 +
 .. Desde un explorador, inicie sesión en la API DE REST del nodo de gestión:
@@ -348,20 +354,20 @@ NOTE: Debe crear un nuevo rol HCC de NetApp en vCenter para añadir un subsistem
 
 
 
-== (Solo NetApp HCI) Configure los activos de nodos de computación
+== Paso 6: (Solo NetApp HCI) Configurar activos de nodo de computación
 
-. (Solo para NetApp HCI) Añada un activo de nodo de computación a los activos conocidos del nodo de gestión:
-+
-.. Seleccione *POST /assets/{Asset_id}/Compute-Nodes* para agregar un subactivo de nodo de computación con credenciales para el activo de nodo de computación.
-.. Seleccione *probar*.
-.. Introduzca el ID de activo base principal que copió en el portapapeles en el campo *Asset_id*.
-.. En la carga útil, introduzca los valores de carga útil necesarios tal y como se definen en la ficha Modelo . Introduzca `ESXi Host` como `type` e introduzca la etiqueta de hardware guardada durante un paso anterior para `hardware_tag`.
-.. Seleccione *Ejecutar*.
+Agregue un activo de nodo de cálculo a los activos conocidos del nodo de gestión
+
+.Pasos
+. Seleccione *POST /assets/{Asset_id}/Compute-Nodes* para agregar un subactivo de nodo de computación con credenciales para el activo de nodo de computación.
+. Seleccione *probar*.
+. Introduzca el ID de activo base principal que copió en el portapapeles en el campo *Asset_id*.
+. En la carga útil, introduzca los valores de carga útil necesarios tal y como se definen en la ficha Modelo . Introduzca `ESXi Host` como `type` e introduzca la etiqueta de hardware guardada durante un paso anterior para `hardware_tag`.
+. Seleccione *Ejecutar*.
 
 
 
 
-[discrete]
 == Obtenga más información
 
 * link:concept_hci_volumes.html#persistent-volumes["Volúmenes persistentes"]

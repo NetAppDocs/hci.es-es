@@ -374,5 +374,4 @@ Agregue un activo de nodo de cálculo a los activos conocidos del nodo de gesti�
 * link:task_mnode_add_assets.html["Añada activos de computación y de controladora al nodo de gestión"]
 * link:task_mnode_install_add_storage_NIC.html["Configurar un NIC de almacenamiento"]
 * https://docs.netapp.com/us-en/vcp/index.html["Plugin de NetApp Element para vCenter Server"^]
-* https://www.netapp.com/hybrid-cloud/hci-documentation/["Página de recursos de NetApp HCI"^]
 

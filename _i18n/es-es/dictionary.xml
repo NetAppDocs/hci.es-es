@@ -131,8 +131,6 @@
   <block id="61dfc712d6e3605cfa8c03816883a956" category="list-text">*Opcional*: Verifique que los nodos nuevos estén visibles en VMware vSphere Web Client (para nodos de computación) o en el plugin de Element para vCenter Server (para nodos de almacenamiento).</block>
   <block id="f48a06284a0df48dae9a67886037b154" category="inline-link-macro">quitar manualmente</block>
   <block id="c70e7fb85a0bbb75d626cb1d7966ab03" category="admonition">Si expandió un clúster de almacenamiento de dos nodos a cuatro nodos o más, la pareja de nodos testigo que anteriormente utilizaba el clúster de almacenamiento seguirá visible como máquinas virtuales en espera en vSphere. El clúster de almacenamiento recién ampliado no los utiliza; si desea recuperar recursos de equipos virtuales, puede hacerlo <block ref="b068a43ec0931fd63c3030d857c1d3cb" category="inline-link-macro-rx"></block> Las máquinas virtuales del nodo de testigo.</block>
-  <block id="a83404b3b2ca8b3c39459b719d7844d7" category="inline-link">Página de recursos de NetApp HCI</block>
-  <block id="efb3497df51898324a04d1329dc9b9ae" category="list-text"><block ref="efb3497df51898324a04d1329dc9b9ae" category="inline-link-rx"></block></block>
   <block id="de8f3c57f62ff5861214b8103726109f" category="inline-link">Instrucciones de instalación y configuración para nodos de almacenamiento y de computación de NetApp HCI</block>
   <block id="5eed704594b84518dc6a723520e99cfc" category="list-text"><block ref="5eed704594b84518dc6a723520e99cfc" category="inline-link-rx"></block></block>
   <block id="a3e8bb013b9f2a7fa74453a28fd169f9" category="inline-link">VMware Knowledge base: Soporte de procesador de Enhanced vMotion Compatibility (EVC)</block>
@@ -1216,7 +1214,6 @@
   <block id="62b04af8c4282f934d228f5334940b4f" category="list-text"><block ref="62b04af8c4282f934d228f5334940b4f" category="inline-link-macro-rx"></block></block>
   <block id="6bc3cc5c8a1df1f098ef6e35a878f98e" category="inline-link-macro">Requisitos de recursos de nodo de observación para clústeres de almacenamiento de dos nodos</block>
   <block id="f6a8ca908309208ad5959a4430ffc844" category="list-text"><block ref="f6a8ca908309208ad5959a4430ffc844" category="inline-link-macro-rx"></block></block>
-  <block id="acc25bb29912a0eb99591d6397d5e11d" category="list-text"><block ref="acc25bb29912a0eb99591d6397d5e11d" category="inline-link-rx"></block></block>
   <block id="5807dc586af1c3488330009c5fec10c3" category="summary">Obtenga información sobre cómo seleccionar el inventario de nodos de NetApp HCI durante la implementación.</block>
   <block id="4522ab808d457be019e52e122568677a" category="doc">Seleccione un inventario</block>
   <block id="47905e5efb891bcaf11ad7fc597ab86b" category="paragraph">En la página *Inventory*, el motor de implementación de NetApp detecta automáticamente los nodos de almacenamiento y de computación disponibles, lo que permite seleccionar y agregar todos los recursos de NetApp HCI a la implementación. Si un nodo no cumple con los requisitos de la implementación, no se puede seleccionar y los problemas se indican como errores. Puede colocar el cursor sobre el error en la fila del nodo para ver una explicación. Al elegir el inventario de nodos en la página Inventory, el nodo de almacenamiento que aloja el motor de implementación de NetApp se selecciona automáticamente y no puede anular la selección.</block>
@@ -6233,10 +6230,7 @@
   <block id="6bdecd9b5d3ab973ac36df911f986fc3" category="paragraph">Si va a realizar una actualización in situ de un nodo de gestión existente a Element 12,8, antes de actualizar, debe asegurarse de que la versión de hardware de máquina virtual del nodo de gestión sea compatible con ESXi 6,7 (versión 14 de hardware de máquina virtual) o posterior según el entorno.</block>
   <block id="d334c1e547b1e27eae5f50bf46f786cd" category="admonition">También puede seguir estos pasos para actualizar la versión de hardware de la máquina virtual en los nodos de testigos.</block>
   <block id="da356a9209429c8cb4f06565d719d2b8" category="list-text">Inicie sesión en vSphere Web Client como administrador de vCenter.</block>
-  <block id="1a331e443f5aee428076dfc1341e09b5" category="list-text">En el menú vSphere Client, seleccione *VMs* y *Templates*.</block>
-  <block id="f42849b7cb77e25b9a5601553a509100" category="list-text">Haga clic con el botón derecho en la máquina virtual y seleccione *Compatibilidad* &gt; *Actualizar compatibilidad de VM*.</block>
   <block id="cf8716d5690805e881fbd8fa22fb282a" category="list-text">Seleccione ESXi 6,7 o una versión posterior, según la versión del entorno de vSphere.</block>
-  <block id="7473f663a4bbad1085e61ed9c976a50a" category="list-text">Una vez completada la actualización, seleccione *Vsphere client refresh* y verifique que la compatibilidad de VM esté en la versión deseada.</block>
   <block id="6b17900bf8b7a52b1be75bbe68b2d77e" category="section-title">Paso 2: Actualice un nodo de gestión a Element 12,5 o una versión posterior</block>
   <block id="d5bdcd035d3751961b201dd1c2261aa3" category="paragraph">Elija una de las siguientes opciones de actualización:</block>
   <block id="6d8cd87a85946daeae42cb54aade3baa" category="section-title">Paso 1: Descargar ISO o OVA e implementar la VM</block>
@@ -6253,4 +6247,10 @@
   <block id="64391abac346294811422637c6d0a865" category="paragraph">Agregue un activo de nodo de cálculo a los activos conocidos del nodo de gestión</block>
   <block id="975648a39ca92865d807bc35f02b5984" category="inline-link-macro">Aviso sobre el software Element 12.8</block>
   <block id="2d0be4b4ba388979c4f454ae05179965" category="list-text"><block ref="2d0be4b4ba388979c4f454ae05179965" category="inline-link-macro-rx"></block></block>
+  <block id="6e93fbac14e98fd4eee5f4f560e1d580" category="list-text">En el menú del cliente de vSphere, seleccione *VMs and Templates*.</block>
+  <block id="be19667c20f2f3c6b932b48a9c488774" category="list-text">Haga clic con el botón derecho en la máquina virtual (VM) y seleccione *Power* &gt; *Shut Down Guest OS*.</block>
+  <block id="6f5f678ae471ecc070cea185b3d40ed4" category="paragraph">Espere hasta que la máquina virtual se apague.</block>
+  <block id="b58c4fe6ac8a2dffa0fb94c9d1de7556" category="list-text">Haga clic con el botón derecho del ratón en la VM y seleccione *Compatibilidad* &gt; *Actualizar compatibilidad de VM*.</block>
+  <block id="eeb196c0a77fbb85f8908ae3cca16bfc" category="list-text">Una vez completada la actualización, haga clic con el botón derecho en la VM y seleccione *Power* &gt; *Power On*.</block>
+  <block id="917268d8045dd1bb18e5f8cc7caf9359" category="list-text">Seleccione *Vsphere client refresh* y verifique que la compatibilidad de VM esté en la versión deseada.</block>
 </blocks>

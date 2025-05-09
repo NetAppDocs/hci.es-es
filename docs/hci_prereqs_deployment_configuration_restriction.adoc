@@ -18,9 +18,8 @@ Ciertas configuraciones están restringidas en el motor de puesta en marcha de N
 
 Si usted link:task_nde_select_inventory.html["Seleccione una configuración restringida en la página *Inventario*"] durante la implementación, aparece un mensaje de error con opciones de configuración válidas alternativas.
 
-[discrete]
+
+
 == Obtenga más información
 
-* https://www.netapp.com/hybrid-cloud/hci-documentation/["Recursos de NetApp HCI"^]
-* https://docs.netapp.com/us-en/vcp/index.html["Plugin de NetApp Element para vCenter Server"^]
-
+https://docs.netapp.com/us-en/vcp/index.html["Plugin de NetApp Element para vCenter Server"^]

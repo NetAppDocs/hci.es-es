@@ -72,9 +72,6 @@ En la tabla se emplean las siguientes abreviaturas:
 | Nodo de gestión | MVIP de nodo de almacenamiento | 442 | Acceso de interfaz de usuario y de API al nodo de almacenamiento y actualizaciones del software Element 
 
 
-| Nodo de gestión | `23.32.54.122`, `216.240.21.15` | 443 | Actualizaciones del software Element 
-
-
 | Nodo de gestión | Controlador de administración en placa base (BMC) | 443 | Supervisión de hardware y conexión de inventario (comandos Redfish e IPMI) 
 
 

@@ -20,15 +20,20 @@ A partir del lanzamiento del nodo de gestión Element 11.3, el diseño del nodo 
 
 .Acerca de esta tarea
 * Debe actualizar al paquete de servicios de gestión más reciente antes de actualizar el software Element.
++
 
+CAUTION: El paquete de servicios de administración 2.27 incluye el complemento Element para vCenter Server 5.5, que solo es compatible con el nodo de administración 12.8.  Cuando actualiza a los servicios de administración 2.27, debe cambiar la secuencia de actualización y actualizar el paquete de servicios de administración _después_ de actualizar a Element 12.8 para tener compatibilidad entre el nodo de administración y los servicios de administración.
 
++
 [NOTE]
 ====
-* Los servicios de gestión 2.22.7 incluyen el plugin de Element para vCenter Server 5.0, que contiene el plugin remoto. Si usa el plugin de Element, debe actualizar a los servicios de gestión 2.22.7 o una versión posterior para cumplir con la directiva de VMware que elimina la compatibilidad con los plugins locales. https://kb.vmware.com/s/article/87880["Leer más"^].
-* Para obtener las notas de la versión de los servicios de gestión más recientes, en las que se describen servicios principales, funciones nuevas, correcciones de errores y soluciones alternativas para cada paquete de servicio, consulte https://kb.netapp.com/Advice_and_Troubleshooting/Data_Storage_Software/Management_services_for_Element_Software_and_NetApp_HCI/Management_Services_Release_Notes["las notas de la versión de los servicios de gestión"^]
+** Los servicios de gestión 2.22.7 incluyen el plugin de Element para vCenter Server 5.0, que contiene el plugin remoto. Si usa el plugin de Element, debe actualizar a los servicios de gestión 2.22.7 o una versión posterior para cumplir con la directiva de VMware que elimina la compatibilidad con los plugins locales. https://kb.vmware.com/s/article/87880["Leer más"^].
+** Para obtener las notas de la versión de los servicios de gestión más recientes, en las que se describen servicios principales, funciones nuevas, correcciones de errores y soluciones alternativas para cada paquete de servicio, consulte https://kb.netapp.com/Advice_and_Troubleshooting/Data_Storage_Software/Management_services_for_Element_Software_and_NetApp_HCI/Management_Services_Release_Notes["las notas de la versión de los servicios de gestión"^]
 
 
 ====
+
+
 .Lo que necesitará
 A partir de los servicios de gestión 2.20.69, debe aceptar y guardar el contrato de licencia de usuario final (CLUF) antes de utilizar la API o la interfaz de usuario de control de cloud híbrido de NetApp para actualizar los servicios de gestión:
 

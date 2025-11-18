@@ -38,7 +38,7 @@ NetApp HCI solo admite determinados modelos de nodo de almacenamiento en clúste
 
 Cuando el proceso de instalación de NetApp HCI instala nodos testigo, se almacena una plantilla de máquina virtual en VMware vCenter que puede utilizar para volver a poner en marcha un nodo de testigo en caso de que se elimine, se pierda o se dañe por accidente. También puede utilizar la plantilla para volver a poner en marcha un nodo de testigo si necesita sustituir un nodo de computación con errores que alojaba el nodo de testigo. Para obtener instrucciones, consulte link:task_hci_h410crepl.html["Vuelva a poner en marcha nodos de testigos para clústeres de almacenamiento de dos y tres nodos"].
 
-Si va a realizar una actualización in situ de un nodo Witness existente a Element 12,8, antes de actualizar, debe asegurarse de que la versión de hardware de la máquina virtual del nodo Witness sea compatible con ESXi 6,7 (versión 14 de hardware de máquina virtual) o posterior según el entorno. Consulte link:task_hcc_upgrade_management_node.html#upgrade-vm-hardware["Actualizar la versión de hardware de la máquina virtual"].
+Si va a realizar una actualización in situ de un nodo testigo existente a Element 12.8 o posterior, antes de actualizar, debe asegurarse de que la versión del hardware de la máquina virtual en el nodo testigo sea compatible con ESXi 6.7 (versión de hardware de la máquina virtual 14) o posterior, según su entorno. Verlink:task_hcc_upgrade_management_node.html#upgrade-vm-hardware["Actualizar la versión de hardware de la máquina virtual"] .
 
 ====
 

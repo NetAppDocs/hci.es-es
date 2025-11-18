@@ -20,7 +20,7 @@ NOTE: Si necesita información para actualizar los nodos de gestión 12.2 o una 
 
 == Paso 1: Actualice la versión del hardware de la VM en un nodo de gestión
 
-Si va a realizar una actualización in situ de un nodo de gestión existente a Element 12,8, antes de actualizar, debe asegurarse de que la versión de hardware de máquina virtual del nodo de gestión sea compatible con ESXi 6,7 (versión 14 de hardware de máquina virtual) o posterior según el entorno.
+Si va a realizar una actualización in situ de un nodo de administración existente a Element 12.8 o posterior, antes de actualizar, debe asegurarse de que la versión del hardware de la máquina virtual en el nodo de administración sea compatible con ESXi 6.7 (versión de hardware de la máquina virtual 14) o posterior, según su entorno.
 
 
 NOTE: También puede seguir estos pasos para actualizar la versión de hardware de la máquina virtual en los nodos de testigos.

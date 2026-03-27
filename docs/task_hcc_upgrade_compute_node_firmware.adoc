@@ -565,4 +565,6 @@ CAUTION: Durante el proceso de encendido, durante aproximadamente cinco minutos,
 
 == Obtenga más información
 
-https://docs.netapp.com/us-en/vcp/index.html["Plugin de NetApp Element para vCenter Server"^]
+* link:https://kb.netapp.com/on-prem/solidfire/Element_OS_Kbs/vmnic1_and_vmnic4_is_swapped_by_compute_node_firmware_upgrade["La actualización de firmware del nodo de cómputo intercambia vmnic1 y vmnic4"^]
+* link:https://docs.netapp.com/us-en/vcp/index.html["Plugin de NetApp Element para vCenter Server"^]
+
